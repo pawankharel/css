@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    background-color: dodgerblue;
+
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+
+}
+ul li a:hover{
+    background-color: orange;
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    width: 100px;
+    background-color: aqua;
+    display: none;
+}
+ul li:hover .dropdown{
+    display: block;
+}
+.subdropdown{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    background-color: red;
+
+}
+.dropdown li:hover .subdropdown{
+    
+    display: block;
+}
+
